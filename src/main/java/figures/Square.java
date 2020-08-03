@@ -18,10 +18,10 @@ public class Square extends Figure {
 
     @Override
     public String toString() {
-        return "Square{" +
-                "side=" + side +
-                ", square=" + super.getSquare() +
-                ", color=" + super.getColor().toString() +
-                '}';
+        return "Square{"
+                + " side= " + side
+                + ", square= " + super.getSquare()
+                + ", color= " + super.getColor().toString()
+                + '}';
     }
 }

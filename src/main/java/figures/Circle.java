@@ -13,10 +13,10 @@ public class Circle extends Figure {
 
     @Override
     public String toString() {
-        return "Circle{" +
-                "radius=" + radius +
-                ", square=" + super.getSquare() +
-                ", color=" + super.getColor().toString() +
-                '}';
+        return "Circle{"
+                + " radius= " + radius
+                + ", square= " + super.getSquare()
+                + ", color= " + super.getColor().toString()
+                + '}';
     }
 }

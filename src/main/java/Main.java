@@ -29,6 +29,8 @@ public class Main {
                     Triangle triangle = new Triangle();
                     System.out.println(triangle.toString());
                     break;
+                default:
+                    break;
             }
         }
     }

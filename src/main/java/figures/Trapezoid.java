@@ -2,19 +2,19 @@ package figures;
 
 public class Trapezoid extends Figure {
 
+    private final int maxLongOfSide = 100;
+
     private double basis;
-
     private double basis2;
-
     private double height;
 
     public Trapezoid() {
-        this.basis = (int) ((Math.random() * (100)) + 1);
-        this.height = (int) ((Math.random() * (100)) + 1);
+        this.basis = (int) ((Math.random() * (maxLongOfSide)) + 1);
+        this.height = (int) ((Math.random() * (maxLongOfSide)) + 1);
 
         while (basis * height > super.getSquare()) {
-            this.basis = (int) ((Math.random() * (100)) + 1);
-            this.height = (int) ((Math.random() * (100)) + 1);
+            this.basis = (int) ((Math.random() * (maxLongOfSide)) + 1);
+            this.height = (int) ((Math.random() * (maxLongOfSide)) + 1);
 
             if (basis * height < super.getSquare()) {
                 this.basis2 = (super.getSquare() - basis * height) / (2 * height);
@@ -40,12 +40,12 @@ public class Trapezoid extends Figure {
 
     @Override
     public String toString() {
-        return "Trapezoid{" +
-                "low basis=" + basis +
-                ", high basis=" + basis2 +
-                ", height=" + height +
-                ", square=" + super.getSquare() +
-                ", color=" + super.getColor().toString() +
-                '}';
+        return "Trapezoid{"
+                + " low basis= " + basis
+                + ", high basis= " + basis2
+                + ", height= " + height
+                + ", square= " + super.getSquare()
+                + ", color= " + super.getColor().toString()
+                + '}';
     }
 }
